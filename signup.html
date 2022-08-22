@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+<style> 
+    .formClass {
+        float: right;
+        /* border: 3px solid black; */
+        border-radius: 10px;
+        position: relative;
+        margin-right: 95px;
+        margin-top: 100px;
+        padding: 40px;
+        outline: none;
+        /* background-color: #AEBACC; */
+    }
+
+    img {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-color: #010081;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    input {
+        margin: 8px 30px;
+        border-radius: 9px;
+        padding: 7px 25px;
+        /* background:transparent; */
+    }
+
+    input:hover {
+        background-color: rgb(234, 227, 227);
+    }
+
+    fieldset {
+        background-color: #AEBACC;
+        padding: 25px 20px;
+        border: 2px solid #666;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px rgb(33, 33, 33);
+        /* margin-bottom: 150px; */
+    }
+    .btn{
+        margin-bottom: 0.5rem;
+    }
+    .already-user{
+        padding-top: 1rem;
+        color:rgb(0, 0, 0);
+    }
+    .already-user:hover{
+        color:white;
+        text-shadow: 1px 1px 7px black;
+    }
+    legend {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <img src="signup.png" height="760.2" width="900">
+    <div class="formClass">
+        <form>
+            <fieldset class="feildForm">
+                <legend style="color: white">Sign Up</legend>
+                <div><input class="btn" type="text" name="fname" placeholder="First Name"><br></div>
+                <div><input class="btn" type="text" name="lname" placeholder="Last Name"><br></div>
+                <div><input class="btn" type="email" name="mail" placeholder="Email ID"><br></div>
+                <div><input class="btn" type="password" name="password" placeholder="Enter Password"><br></div>
+                <div><input class="btn" type="password" name="password" placeholder="Confirm Password"><br></div>
+                <div><input class="btn" type="number" name="phone" placeholder="Phone Number"><br></div>
+                <div><input class="btn" type="radio" name="tandc" value="tandc">I agree to terms and conditions<br>
+                </div>
+                <center><div class="btn"><a href="home.html"><input type="submit" value="Signup"></a><br></div></center>
+              <center><a class="already-user" href="login.html">Already a user ? login</a></center>
+            </fieldset>
+        </form>
+        
+    </div>
+
+
+</body>
+
+</html>

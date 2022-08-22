@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- font awesome 6 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/1d6c088b03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <hr width="95%" id="topline">
+        <div id="searchBar">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-list fa-2x" style="color: white;"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">TV and Audio</a>
+                    <a href="#">Phone</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Headphone</a>
+                    <a href="#">Smart Watch</a>
+                    <a href="#">Refrigerator</a>
+                </div>
+            </div>
+            <div id="title"><button onclick="myFunction()" class="sBar">GeekHub</button></div>
+            <div id="snackbar">Welcome to GeekHub</div>
+            <div class="divider1">|</div>
+            <div class="form">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Search anything...">
+                <span class="left-pan"><i class="fa fa-microphone"></i></span>
+            </div>
+            <div class="divider2">|</div>
+            <ul class="navItems">
+                <li class="lItems"><a href="demo.html" class="lLinks">Demo</a></li>
+                <li class="lItems"><a href="category.html" class="lLinks">Category</a></li>
+                <li class="lItems"><a href="about1.html" class="lLinks">AboutUs</a></li>
+                <li class="lItems"><a href="feedbackForm.html" class="lLinks">Feedback</a></li>
+                <li class="lItems"><a href="signup.html" class="lLinks">Login|SignUp</a></li>
+            </ul>
+        </div>
+        <div class="card-promo">
+            <p class="sdlText">Smart Dell Laptop</p>
+            <p class="nwText">New Arrivals</p>
+            <p class="dText">50% Off</p>
+            <button class="shopLaptop">Shop now</button>
+            <img src="sdl.png" alt="#" class="sdlImage">
+        </div>
+        <img src="iphone.png" alt="#" class="iphoneImg">
+        <div class="tb">
+            <img src="tablet.png" alt="#" class="tabletImg">
+            <div class="tablet">
+                <p class="lText">Latest</p>
+                <p class="nText">New Tablet</p>
+                <p class="tButton"><button class="shopTablet">Shop now</button></p>
+            </div>
+        </div>
+        <div class="hb">
+            <img src="headphone.png" alt="#" class="headphoneImg">
+            <div class="headphone">
+                <p class="wText">Wireless</p>
+                <p class="hText">Headphones</p>
+                <p class="hButton"><button class="shopHeadphone">Shop now</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" style="z-index: 0;">
+        <div class="bgCategory bgcSpeaker" style="z-index: 1;"></div>
+        <div class="speaker" style="z-index: 2;">
+            <img src="speaker.png" alt="">
+            <p id="speaker">Sound Systems</p>
+        </div>
+        <div class="bgCategory bgcGaming" style="z-index: 1;"></div>
+        <div class="gaming" style="z-index: 2;">
+            <img src="joystick.png" alt="">
+            <p id="gaming">JoySticks</p>
+        </div>
+        <div class="bgCategory bgcTv" style="z-index: 1;"></div>
+        <div class="tv" style="z-index: 2;">
+            <img src="tv.png" alt="">
+            <p id="tv">Televisions</p>
+        </div>
+        <div class="bgCategory bgcWashing" style="z-index: 1;"></div>
+        <div class="washing" style="z-index: 2;">
+            <img src="washingMachine.png" alt="">
+            <p id="washing">Washing Machines</p>
+        </div>
+        <div class="bgCategory bgcVr" style="z-index: 1;"></div>
+        <div class="vrHead" style="z-index: 2;">
+            <img src="vrHeadSet.png" alt="">
+            <p id="vrHead">Vr Head Set</p>
+        </div>
+    </div>
+
+    <!-- cards -->
+
+    <div class="main-card-box">
+        <div class="card-1">
+            <!-- icon div -->
+            <div class="icon-box">
+                <center>
+                    <i class=" fa-solid fa-headset "></i>
+                    <p>24/7 support available </p>
+                </center>
+            </div>
+        </div>
+
+        <div class="card-2">
+            <!-- icon div -->
+            <div class="icon-box">
+                <center>
+                    <i class=" fa-solid fa-headset"></i>
+                    <p>Dialy chance to win</p>
+                </center>
+            </div>
+        </div>
+
+        <div class="card-3">
+            <!-- icon div -->
+            <div class="icon-box">
+                <center>
+                    <i class=" fa-solid fa-truck-fast"></i>
+                    <p>Money back Guarntee</p>
+                </center>
+            </div>
+        </div>
+
+        <div class="card-4">
+            <!-- icon div -->
+            <div class="icon-box">
+                <center>
+                    <i class=" fa-solid fa-gift"></i>
+                    <p>open world shipping</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- section completes -->
+
+
+
+
+    <!-- div -->
+    <div class="main-box-items">
+        <div class="inner-box">
+            <h3 class="sale" id="juicer">Sale</h3>
+            <center><img src="juicer 1.png"></center>
+            <p class="item-name">JUICER</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="imggggg.svg"></center>
+            <p class="item-name">LED TV</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale" id="camera">Sale</h3>
+            <center><img src="camera.png"></center>
+            <p class="item-name">CAMERA</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="phone.png"></center>
+            <p class="item-name" style="padding-top: 2.4rem;">MOBILE PHONE</p>
+        </div>
+    </div>
+
+
+
+    <!-- div -->
+    <div class="main-box-items">
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="fridge.png"></center>
+            <p class="item-name" style="padding-top: 0.8rem;">REFRIGERATOR</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="headphone.png"></center>
+            <p class="item-name" style="padding-top: 2.5rem;">HEADPHONE</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="laptop.png"></center>
+            <p class="item-name" style="padding: 1.6rem;">LAPTOP</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="phone.png"></center>
+            <p class="item-name" style="padding-top: 2rem;">MOBILE PHONE</p>
+        </div>
+    </div>
+
+
+    <!-- section completes -->
+
+
+    <div class="add-main-div">
+        <div class="cannon">
+            <h1 class="x70">Cannon X70 PRO</h1>
+        </div>
+
+        <div class="led">
+            <h1 class="x70">Samsund QLed 8k</h1>
+        </div>
+    </div>
+
+
+
+
+    <!-- div -->
+    <div class="main-box-items">
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="vr head set.png"></center>
+            <p class="item-name" style="padding-top: 2.5rem;">VR HEAD SET</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="headphone.png"></center>
+            <p class="item-name" style="padding-top: 2.2rem;">HEADPHONE</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="camera.png"></center>
+            <p class="item-name">CAMERA</p>
+        </div>
+
+        <div class="inner-box">
+            <h3 class="sale">Sale</h3>
+            <center><img src="imggggg.svg"></center>
+            <p class="item-name">LED TV</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- companies -->
+    <div class="companies-main-box">
+        <img class="dell glow " src="dell.png">
+        <img class="samsung glow " src="samsung.jpg" alt="">
+        <img class="apple glow " src="apple.png">
+        <img class="hp glow " src="hp.jpg" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Geek<span>Hub</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="demo.html">Demo</a>
+
+                <a href="category.html">Category</a>
+
+                <a href="about1.html">About</a>
+
+                <a href="feedbackForm.html">Feedback</a>
+            </p>
+
+            <p class="footer-company-name">Company Name © 2015</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Chitkara University</span>Rajpura, Punjab</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 7027170389</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">saransh2083.be20@chitakra.edu.in</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="www.linkedin.com/in/saranshpasricha"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Saransh24"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!--
+todo list
+1. Add snackbar to the title of webpage 
+-->

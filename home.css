@@ -1,0 +1,1045 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+.sBar{
+    font-size: 1.5rem;
+    background-color: rgb(85,57,101);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+}
+
+#header {
+    height: 35rem;
+    width: 98.932vw;
+    background-color: #FCDAB7;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+#topline {
+    position: absolute;
+    top: 2.6rem;
+    left: 2.7rem;
+    right: auto;
+    background-color: #ffb56b;
+}
+
+#searchBar {
+    background-color: rgba(85, 57, 101, 1);
+    position: absolute;
+    top: 4rem;
+    left: 2.8rem;
+    width: 91.2rem;
+    height: 2.7rem;
+    border: 0.1px solid rgba(85, 57, 101, 1);
+    border-radius: 2.5rem;
+}
+
+/* SnackBar */
+
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    z-index: 99999;
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/*SnackBar */
+
+/* DROPDOWN MENU */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgba(85, 57, 101, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 1.5rem;
+    top: -0.5rem;
+    /* border-radius: 100rem; */
+    /* margin-left: 0.2; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 100, 100, 1);
+    border-radius: 1rem;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-radius: 1rem;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* XXX DROPDOWN MENU XXX */
+
+#title {
+    position: absolute;
+    left: 8rem;
+    font-size: 1.5rem;
+    top: 0.1rem;
+    color: white;
+    margin-top: 5px;
+}
+
+.divider1 {
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    left: 26.5rem;
+    margin-top: -1.5rem;
+}
+
+.divider2 {
+    position: absolute;
+    font-size: 2.4rem;
+    color: white;
+    left: 61rem;
+    margin-top: -1.5rem;
+}
+
+/* search bar */
+
+#search {
+    position: absolute;
+    left: 26rem;
+    margin-top: -0.5rem;
+}
+
+.form {
+    position: relative;
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af;
+    position: absolute;
+    left: 30.5rem;
+    top: -0.4rem;
+    z-index: 9999;
+}
+
+.form span {
+    position: absolute;
+    right: 33rem;
+    top: -0.5rem;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+    padding-left: 7px;
+    position: absolute;
+    right: 33rem;
+    top: -0.5rem;
+}
+
+.left-pan i {
+    padding-left: 10px;
+}
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+    position: absolute;
+    left: 30rem;
+    height: 2rem;
+    margin-top: -1rem;
+    outline: none;
+    width: 28.5rem;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+/* xxx search bar xxx */
+
+/* NavItems */
+
+.navItems {
+    list-style: none;
+    position: absolute;
+    left: 65rem;
+    margin-top: -0.5rem;
+    word-spacing: 1rem;
+    color: white;
+}
+
+.lItems {
+    display: inline-block;
+}
+
+.lLinks {
+    text-decoration: none;
+    color: white;
+}
+
+/* xxx navItems xxx */
+
+.card-promo {
+    width: 40rem;
+    height: 20rem;
+    background-color: rgba(255, 181, 87, 1);
+    display: inline-block;
+    position: absolute;
+    top: 11rem;
+    left: 3rem;
+    border: 0.1px solid rgba(255, 181, 87, 1);
+    border-radius: 3rem;
+    transition: transform .2s;
+}
+
+.card-promo:hover {
+    transform: scale(1.02);
+}
+
+.sdlImage {
+    position: relative;
+    left: 17.5rem;
+    top: 4.5rem;
+}
+
+.sdlText {
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    Left: 1rem;
+    color: white;
+}
+
+.nwText {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+    letter-spacing: 1rem;
+    font-size: 1.2rem;
+}
+
+.dText {
+    font-size: 4rem;
+    position: absolute;
+    top: 9rem;
+    left: 5rem;
+}
+
+.shopLaptop {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 16rem;
+    left: 5rem;
+    background-color: rgba(123, 0, 0, 1);
+    color: white;
+    border-radius: 0.7rem;
+    padding: 6px;
+}
+
+.tabletImg {
+    position: absolute;
+    top: 11rem;
+    right: 17rem;
+    z-index: 12;
+}
+
+.tablet {
+    background-color: rgba(255, 100, 100, 1);
+    position: absolute;
+    text-align: right;
+    top: 13rem;
+    right: 12rem;
+    width: 20rem;
+    height: 7rem;
+    border: 1px solid rgba(255, 100, 100, 1);
+    border-radius: 54px;
+}
+
+.shopTablet {
+    /* font-size: 1.5rem; */
+    position: relative;
+    /* top: 16rem; */
+    /* left: 5rem; */
+    background-color: rgba(123, 0, 0, 1);
+    color: white;
+    border-radius: 0.7rem;
+    padding: 6px;
+}
+
+.lText {
+    padding-top: 1rem;
+    padding-right: 4rem;
+    color: white;
+}
+
+.nText {
+    padding-right: 3rem;
+    color: white;
+}
+
+.tButton {
+    padding-right: 2.7rem;
+    padding-top: 0.5rem;
+}
+
+.headphoneImg {
+    position: absolute;
+    top: 22rem;
+    right: 12rem;
+    z-index: 12;
+}
+
+.headphone {
+    background-color: rgba(255, 100, 100, 1);
+    position: absolute;
+    text-align: left;
+    top: 23rem;
+    right: 12rem;
+    width: 20rem;
+    height: 7rem;
+    border: 1px solid rgba(255, 100, 100, 1);
+    border-radius: 54px;
+}
+
+.shopHeadphone {
+    /* font-size: 1.5rem; */
+    position: relative;
+    /* top: 16rem; */
+    /* left: 5rem; */
+    background-color: rgba(123, 0, 0, 1);
+    color: white;
+    border-radius: 0.7rem;
+    padding: 6px;
+}
+
+.wText {
+    padding-top: 1rem;
+    padding-left: 3.3rem;
+    color: white;
+}
+
+.hText {
+    padding-left: 2.5rem;
+    color: white;
+}
+
+.hButton {
+    padding-left: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.iphoneImg {
+    position: absolute;
+    top: 14.5rem;
+    right: 37.5rem;
+    height: 16rem;
+    width: 11rem;
+    opacity: 0.5;
+    transition: transform .2s;
+}
+
+.iphoneImg:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tb {
+    transition: transform 0.2s;
+}
+
+.hb {
+    transition: transform 0.2s;
+}
+
+.hb:hover {
+    transform: scale(1.02);
+}
+
+.tb:hover {
+    transform: scale(1.02);
+}
+
+/*xxxxxxxxxxxx HEADER DIV ENDED xxxxxxxxx */
+
+/* categories start */
+
+.category {
+    margin-top: 5rem;
+    width: 98.932vw;
+    height: 14rem;
+    background-color: #FCDAB7;
+}
+
+.speaker,
+.gaming,
+.tv,
+.washing,
+.vrHead {
+    position: absolute;
+}
+
+.speaker {
+    top: 38.5rem;
+    left: 5rem;
+}
+
+.gaming {
+    top: 41rem;
+    left: 27rem;
+}
+
+.tv {
+    top: 42rem;
+    left: 45rem;
+}
+
+.washing {
+    top: 42rem;
+    left: 63rem;
+}
+
+.vrHead {
+    top: 41.5rem;
+    left: 81rem;
+}
+
+.bgCategory {
+    background-color: rgba(255, 189, 106, 1);
+    border: 1px solid rgba(255, 189, 106, 1);
+    z-index: 1;
+    height: 8rem;
+    width: 11rem;
+    border-radius: 3rem;
+}
+
+.bgcSpeaker {
+    position: absolute;
+    top: 42rem;
+    left: 7rem;
+}
+
+.bgcGaming {
+    position: absolute;
+    top: 42rem;
+    left: 25.5rem;
+}
+
+.bgcTv {
+    position: absolute;
+    top: 42rem;
+    left: 44rem;
+}
+
+.bgcWashing {
+    position: absolute;
+    top: 42rem;
+    left: 61.5rem;
+}
+
+.bgcVr {
+    position: absolute;
+    top: 42rem;
+    left: 79rem;
+}
+
+#speaker {
+    text-align: center;
+    position: absolute;
+    top: 13rem;
+    left: 3.3rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#gaming {
+    text-align: center;
+    position: absolute;
+    top: 10.5rem;
+    left: 2rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#tv {
+    text-align: center;
+    position: absolute;
+    top: 9.3rem;
+    left: 2rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#washing {
+    text-align: center;
+    position: absolute;
+    top: 8.5rem;
+    left: 1.3rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#vrHead {
+    text-align: center;
+    position: absolute;
+    top: 9rem;
+    left: 0.3rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+/* .card {} */
+
+.bgiSupport {
+    position: absolute;
+    top: 60rem;
+    left: 8rem;
+}
+
+.bgiCashback {
+    position: absolute;
+    top: 60rem;
+    left: 74rem;
+}
+
+.bgiMoney {
+    position: absolute;
+    top: 60rem;
+    left: 30rem;
+}
+
+.bgiDelevery {
+    position: absolute;
+    top: 60rem;
+    left: 54rem;
+}
+
+.main-card-box {
+    margin-bottom: -4rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.card-1 {
+    background-image: url("support.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 22vw;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+.card-1:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.card-2 {
+    background-image: url("money.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 22vw;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+.card-2:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.card-3 {
+    background-image: url("cashback.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 22vw;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+.card-3:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.card-4 {
+    background-image: url("delievery.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 22vw;
+    margin: 1.5rem;
+    border-radius: 2rem;
+}
+
+.card-4:hover {
+    transform: rotatey(360deg);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.icon-box {
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 70%;
+    border: 0.1rem solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* section completes */
+
+
+
+.main-box-items {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #FDECDA;
+}
+
+.inner-box {
+    width: 20vw;
+    height: 35vh;
+    background-color: #FFBD6A;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+#juicer {
+    height: 4px;
+}
+
+
+.sale {
+    text-align: left;
+    margin-left: 2rem;
+    color: #AB0000;
+    font-size: 2rem;
+}
+
+.item-name {
+    text-align: center;
+    color: white;
+}
+
+/* section completes */
+
+.add-main-div {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 4rem;
+}
+
+.cannon {
+    background-image: url("cannon.svg");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+}
+
+.led {
+    background-image: url("led.svg");
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 1rem;
+}
+
+.x70 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/* section completes */
+
+.companies-main-box {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.dell {
+    height: 15vh;
+    width: 8vw;
+    padding: 5rem;
+}
+
+.samsung {
+    height: 10vh;
+    width: 15vw;
+    padding: 5rem;
+    margin-top: 1rem;
+}
+
+.apple {
+    height: 12vh;
+    width: 7vw;
+    padding: 5rem;
+    margin-top: 0.5rem;
+}
+
+.hp {
+    height: 12vh;
+    width: 7vw;
+    padding: 5rem;
+    margin-top: 1rem;
+}
+
+.glow {
+    animation: company 1.5s infinite;
+}
+
+@keyframes company {
+    0% {
+        transform: scale(0.5);
+    }
+
+    75% {
+        transform: scale(0.6);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    font-family: Open Sans;
+}
+
+.footer-distributed {
+    background: #FCDAB7;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #000000;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #000000;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #000000;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+/* footer ended */
+
+
+/* section completes */

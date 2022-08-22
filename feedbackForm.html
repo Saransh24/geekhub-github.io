@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    body {
+        background-image: url("feedback.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    form {
+        display: inline-block;
+    }
+
+    .formClass {
+        background-color: skyblue;
+        border: 10px solid skyblue;
+        float: right;
+        margin-right: 10%;
+        margin-top: 3%;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0px 5px 5px 0px black;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .formBox {
+        border-radius: 61px;
+        margin-bottom: 10px;
+        height: 2vh;
+        padding: 11px 8px;
+
+    }
+
+    .formFeedback {
+        border-radius: 25px;
+        margin-bottom: 3px;
+        height: 5rem;
+        width: 23rem;
+        padding: 10px 10px;
+    }
+
+    h5 {
+        margin: 10px 0px;
+    }
+
+    input[type=submit] {
+        margin-bottom: 0.1rem;
+        height: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+        /* border-radius: 5px; */
+        /* margin-top: 5px; */
+        border-style: none;
+        background-color: rgb(255, 243, 60);
+        padding-bottom: 0.4rem;
+    }
+
+    input:hover{
+        background-color: rgb(239, 232, 232);
+    }
+
+    textarea:hover {
+        background-color: rgb(239, 232, 232);
+    }
+
+    .quote {
+        display: inline-block;
+        margin-top: 20.4%;
+        margin-left: 10.5%;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .sBar {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(255, 243, 60);
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        border-style: none;
+        border-radius: 0.8rem;
+    }
+
+    /* sBar:hover{
+        transform: scale(0.3);
+    } */
+
+    /* SnackBar */
+    #snackbar {
+        visibility: hidden;
+        /* Hidden by default. Visible on click */
+        min-width: 250px;
+        /* Set a default minimum width */
+        margin-left: -125px;
+        /* Divide value of min-width by 2 */
+        background-color: #333;
+        /* Black background color */
+        color: #fff;
+        /* White text color */
+        text-align: center;
+        /* Centered text */
+        border-radius: 2px;
+        /* Rounded borders */
+        padding: 16px;
+        /* Padding */
+        position: fixed;
+        /* Sit on top of the screen */
+        z-index: 1;
+        /* Add a z-index if needed */
+        left: 50%;
+        /* Center the snackbar */
+        bottom: 30px;
+        /* 30px from the bottom */
+    }
+
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    #snackbar.show {
+        z-index: 99999;
+        visibility: visible;
+        /* Show the snackbar */
+        /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    /* Animations to fade the snackbar in and out */
+    @-webkit-keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        to {
+            bottom: 30px;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            bottom: 30px;
+            opacity: 1;
+        }
+
+        to {
+            bottom: 0;
+            opacity: 0;
+        }
+    }
+
+    /* Snackbar ended */
+</style>
+
+<body>
+    <h1>Feedback Form</h1>
+    <hr color="black" width="600">
+    <div class="quote">Share your<br>experience<br>with us :)</div>
+    <div class="formClass">
+        <h3 style="font-weight: 15%;">Your feedback matters</h3>
+        <hr color="black" width="300">
+        <br>
+        <form action="https://formspree.io/f/xqkjkaya" method="POST" id="my-form">
+            <input type="text" name="fname" placeholder="Name" size="52" class="formBox" required><br>
+            <input type="email" name="mail" placeholder="Email" size="52" class="formBox" required><br>
+            <textarea type="text" name="feedback" cols="49" rows="15" placeholder="Enter feedback"
+                class="formFeedback"></textarea>
+            <h5>Rating</h5>
+            <input type="radio" name="rating" value="1">1
+            <input type="radio" name="rating" value="2">2
+            <input type="radio" name="rating" value="3">3
+            <input type="radio" name="rating" value="4">4
+            <input type="radio" name="rating" value="5">5
+            <br>
+            <center><button onclick="myFunction()" class="sBar"><input type="submit" value="Submit"></button></center>
+            <div id="snackbar">Your feedback is noted..</div>
+        </form>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Category</title>
+  <!-- fontawesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link -->
+  <link rel="stylesheet" href="category.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="about.html">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg myNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <p class="gh">GeekHub</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+                <a class="nav-link active text-white ls " aria-current="page" href="#">Mobile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white ls " aria-current="page" href="#">Laptops & desktops</a>
+              </li> -->
+          <!-- dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 30px;">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#mobiles">Mobile</a></li>
+              <li><a class="dropdown-item" href="#laptops">Laptops & PC's</a></li>
+              <li></li>
+              <li><a class="dropdown-item" href="#appliances">Appliances</a></li>
+            </ul>
+          </li>
+          <!-- dropdown -->
+          <li class="nav-item">
+            <a class="nav-link active text-white ls " aria-current="page" href="feedbackForm.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white ls " aria-current="page" href="about1.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active  text-white fw-bold login-signup " aria-current="page" href="signup.html">Login | SignUp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar -->
+
+  <img class="salee" id="saleImage" src="sale.jpg" onclick="changeImage()">
+
+  <!-- section 2 -->
+  <div class="main-box">
+    <div class="one">
+      <img class="left-image" src="mp.jpg">
+    </div>
+
+    <a id="mobiles"><div class="two"></a>
+      <h1 class="mb-heading">Mobiles</h1>
+      <p class="mobile-text">Click to see the latest mobile phones of any category like balanced, camera specific, display specific, performance specific of a wide pricing range</p>
+      <center><button class="bttn"><a href="home.html" class="smButton">See More</a></button></center>
+    </div>
+  </div>
+  <!-- section 2 -->
+
+
+  <!-- section 3 -->
+  <div class="main-box">
+    <div class="one">
+      <img class="left-image" src="laptop.jpg">
+    </div>
+
+    <a id="laptops"><div class="two"></a>
+      <h1 class="mb-heading">Laptops/Pc</h1>
+      <p class="mobile-text">Click here to see and buy a laptop/PC's of your choice and your prefferd specifications.We have a wide range of laptops and PC's of every category like work based, good battery, new tech, gaming, performace, linux based ui and many more</p>
+      <center><button class="bttn"><a href="home.html" class="smButton">See More</a></button></center>
+    </div>
+  </div>
+  <!-- section 3 -->
+
+  <a id="appliances"><h1 class="other-appliances">Other Appliances</h1></a>
+  <hr class="hrr">
+
+  <!-- section 4 -->
+  <center>
+    <div class="row row-cols-1 row-cols-md-2 g-4 ">
+      <div class="col">
+        <a href="" style="text-decoration: none; color: black;"><div class="card crdd">
+          <img
+            src="https://www.lg.com/in/images/refrigerators/md07554374/gallery/GL-S292RBQY-Refrigerators-Right-View-D-08.jpg"
+            class="card-img-top" alt="/">
+          
+          <div class="card-body">
+            <h5 class="card-title text-center">Refrigerator</h5>
+
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none; color: black;"><div class="card crdd">
+          <img
+            src="https://www.lg.com/in/images/microwave-ovens/md05266388/gallery/MC2146BL-microwave-ovens-Right-Side-view-D-06.jpg"
+            class="card-img-top" alt="/">
+          <div class="card-body">
+            <h5 class="card-title text-center">Microwave</h5>
+
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none; color: black;"><div class="card crdd">
+          <img
+            src="https://images.samsung.com/is/image/samsung/ph-ax7500k-air-purifier-with-3-way-air-flow-ax90t7080wd-tc-frontonwhite-262333577?$720_576_PNG$"
+            class="card-img-top" alt="/">
+          <div class="card-body">
+            <h5 class="card-title text-center">Air Purifiers</h5>
+
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="col">
+        <a href="" style="text-decoration: none; color: black;"><div class="card crdd">
+          <img
+            src="https://images.samsung.com/is/image/samsung/in-front-loading-ww80k54e0wwtl-ww80k54e0ww-tl-frontdooropenwhite-151212889?$720_576_PNG$"
+            class="card-img-top" alt="/">
+          <div class="card-body">
+            <h5 class="card-title text-center">Washing Machine</h5>
+
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+  </center>
+  <!-- section 4 -->
+
+
+  <!-- footer -->
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <p class="ghubb">GeekHub</p>
+              </div>
+              <div class="footer-text">
+                <!-- <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
+                  tetur adipisicing
+                  elit,Lorem ipsum dolor sit amet.</p> -->
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <i class="fa-brands fa-instagram social"></i>
+                <i class="fa-brands fa-twitter social"></i>
+                <i class="fa-brands fa-facebook social"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <!-- <li><a href="about1.html">about</a></li> -->
+                <!-- <li><a href="#">services</a></li> -->
+                <li><a href="#">portfolio</a></li>
+                <!-- <li><a href="about1.html">Contact</a></li> -->
+                <li><a href="about1.html">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <!-- <li><a href="#">Contact us</a></li> -->
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- footer -->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous">
+  </script>
+
+
+  <script>
+    function changeImage(){
+      var image = document.getElementById('saleImage');
+      if(image.src.match("sale2.jpg")){
+        image.src = "sale.jpg";
+      }
+      else{
+        image.src = "sale2.jpg";
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

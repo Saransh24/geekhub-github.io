@@ -1,0 +1,289 @@
+
+*{
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.smButton{
+  text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+}
+
+.myNav{
+    /* background-color: #010081; */
+    background-image: linear-gradient(to right,#010081,black);
+}
+.gh{
+    color:white;
+    font-weight: bold;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+}
+.ls{
+    margin-right: 2rem;
+}
+.ls:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.login-signup:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.salee{
+    height: 85vh;
+    width: 100%;
+}
+.main-box{
+    height: 70vh;
+    width: 95%;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 2rem;
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    box-shadow: 10px 10px 12px rgb(107, 107, 107);
+}
+.one{
+    height: 50vh;
+    width: 45%;
+    border: 0.1rem solid rgb(255, 255, 255);
+    margin-top: 5rem;
+}
+.two{
+    height: 50vh;
+    width: 45%;
+    border: 0.1rem solid rgb(255, 255, 255);
+    margin-top: 5rem;
+}
+.left-image{
+    height: 49vh;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.mb-heading{
+    font-size: 5rem;
+    text-align: center;
+}
+.mobile-text{
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+.bttn{
+    background-color: #010081;
+    color:#ffdd02;
+    border: 0.1rem solid #010081;
+    border-radius: 2rem;
+    padding:10px 25px;
+    box-shadow: 5px 5px 7px rgb(109, 109, 109);
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+}
+.bttn:hover{
+    box-shadow: 0px 0px 0px;
+    transition: 0.5s;
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+
+
+.other-appliances{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.hrr{
+    padding-bottom: 5rem;
+    width: 32%;
+    margin: auto;
+}
+.crdd{
+    border: 0.2rem solid black;
+    width: 60%;
+    box-shadow: 3px 3px 8px rgb(103, 103, 103);
+}
+.col{
+  padding-right: 0;
+  width: 1vw;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* footer */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+    background-image: linear-gradient(to right,#010081,black);
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+}
+.footer-widget ul li {
+  /* display: inline-block; */
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+footer{
+    margin-top: 7rem;
+}
+.ghubb{
+    color:white;
+    font-size: 3rem;
+}
+.social{
+    color:white;    
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto+Slab:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .formClass {
+        float: left;
+        /* border: 3px solid black; */
+        border-radius: 10px;
+        position: relative;
+        margin-left: 95px;
+        margin-top: 160px;
+        padding: 40px;
+        /* background-color: #AEBACC; */
+    }
+    body {
+        background-color: #010081;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: -2px;
+        margin: 0px;
+    }
+    input {
+        margin: 8px 30px;
+        border-radius: 9px;
+        padding: 7px 40px;
+        /* background:transparent; */
+    }
+    input:hover {
+        background-color: #FEDCB0;
+    }
+    input[type=submit]{
+        background-color: #FF8084;
+        margin-bottom: 1.5rem;
+    }
+    fieldset {
+        background-color: #AEBACC;
+        padding: 25px 20px;
+        border: 2px solid #666;
+        border-radius: 15px;
+        box-shadow: 0px 10px 25px rgb(30, 30, 30);
+        /* margin-bottom: 150px; */
+    }
+    .googlee{
+        color:white;
+        text-decoration: none;
+        margin-left: 0.7rem;
+    }
+    legend {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    img {
+        display: inline-block;
+        margin-left: 89.8px;
+        padding: 0px;
+    }
+</style>
+<body>
+    <div class="formClass">
+        <form>
+            <fieldset class="feildForm">
+                <legend style="color: rgb(255, 255, 255)">Log In</legend>
+                <div><input class="btn" type="email" name="mail" placeholder="Email ID"><br></div>
+                <div><input class="btn" type="password" name="password" placeholder="Enter Password"><br></div>
+                <center><div><a href="home.html" style="z-index: 5;"><input type="submit" value="Log In" style="z-index: -1;"></a><br></div></center>
+                <center><a class="googlee" href="https://www.google.com">Continue with google <i class="fa-brands fa-google"></i></a></center>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <img src="login.jpg" height="760.2" width="900">
+</body>
+</html>
