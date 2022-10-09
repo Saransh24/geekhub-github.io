@@ -57,7 +57,13 @@
         /* margin-bottom: 150px; */
     }
     .btn{
-        margin-bottom: 0.5rem;
+        margin: 0.5rem 0rem;
+        padding: 0.4rem 1.5rem;
+        border-radius: 0.5rem;
+        transition-duration: 500ms;
+    }
+    .btn:hover{
+        transform: scale(1.05);
     }
     .already-user{
         padding-top: 1rem;
@@ -71,6 +77,12 @@
         font-size: 30px;
         font-weight: bolder;
     }
+    #pop_password{
+        margin: 0%;
+        font-size: smaller;
+        color: red;
+        display: none;
+    }
 </style>
 
 <body>
@@ -79,21 +91,27 @@
         <form>
             <fieldset class="feildForm">
                 <legend style="color: white">Sign Up</legend>
-                <div><input class="btn" type="text" name="fname" placeholder="First Name"><br></div>
+                <div><input class="btn" id="fname" type="text" name="fname" placeholder="*First Name"><br></div>
                 <div><input class="btn" type="text" name="lname" placeholder="Last Name"><br></div>
-                <div><input class="btn" type="email" name="mail" placeholder="Email ID"><br></div>
-                <div><input class="btn" type="password" name="password" placeholder="Enter Password"><br></div>
-                <div><input class="btn" type="password" name="password" placeholder="Confirm Password"><br></div>
-                <div><input class="btn" type="number" name="phone" placeholder="Phone Number"><br></div>
+                <div><input class="btn" id="email_id" type="email" name="mail" placeholder="*Email ID"><br></div>
+                <div><input class="btn" id="password" type="password" name="password" placeholder="*Enter Password">
+                <p id="pop_password">*Password should have Lowercase,<br> Uppercase, Number and greater <br> then 8 characters</p>    
+                 <br></div>
+                <div><input class="btn" id="confirm_password" type="password" name="password" placeholder="*Confirm Password"><br></div>
+                <div><input class="btn" id="ph_num" type="number" name="phone" placeholder="*Phone Number"><br></div>
                 <div><input class="btn" type="radio" name="tandc" value="tandc">I agree to terms and conditions<br>
                 </div>
-                <center><div class="btn"><a href="home.html"><input type="submit" value="Signup"></a><br></div></center>
+                <center>
+                <button class="btn" id="sign_btn" type="button">Signup</button>
+                </center>
               <center><a class="already-user" href="login.html">Already a user ? login</a></center>
             </fieldset>
         </form>
         
     </div>
 
+<!-- Script -->
+<script src="./signup.js"></script>
 
 </body>
 
